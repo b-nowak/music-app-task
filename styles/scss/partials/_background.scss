@@ -1,0 +1,18 @@
+.image-bg {
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 373px;
+    top: 0;
+    left: 0;
+    background-blend-mode: lighten;
+    background: url(../../images/bg_image.jpg) center no-repeat;
+    background-color: $dark-gray;
+    opacity: .11;
+    filter: grayscale(100%);
+    .image-opacity {
+        z-index: -1;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 1%, rgba(27, 27, 27, 1));
+        height: 100%;
+    }
+}

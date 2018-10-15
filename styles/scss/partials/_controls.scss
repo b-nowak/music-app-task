@@ -1,0 +1,46 @@
+.controls {
+    position: relative;
+    width: 100%;
+    margin: 40px 0 0;
+    padding: 0 30px;
+    @include flex(space-between, center, row);
+    @include screenUp(xs) {
+        margin: 0;
+        @include flex(center, center, row);
+    }
+    .position-1 {
+        position: relative;
+        @include screenUp(xs) {
+            position: absolute;
+            top: 110px;
+            left: 45px;
+        }
+    }
+    .position-2 {
+        position: relative;
+        @include screenUp(xs) {
+            position: absolute;
+            top: 110px;
+            left: 125px;
+        }
+    }
+    .position-3 {
+        position: relative;
+    }
+    .position-4 {
+        position: relative;
+        @include screenUp(xs) {
+            position: absolute;
+            top: 110px;
+            right: 125px;
+        }
+    }
+    .position-5 {
+        position: relative;
+        @include screenUp(xs) {
+            position: absolute;
+            top: 110px;
+            right: 45px;
+        }
+    }
+}

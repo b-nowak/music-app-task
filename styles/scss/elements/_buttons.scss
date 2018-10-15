@@ -1,0 +1,55 @@
+.btn {
+    padding: 20px;
+    cursor: pointer;
+    &.btn-back {
+        background: url(../../images/back_ico.svg) 50% no-repeat;
+        background-size: 16px;
+        z-index: 5;
+    }
+    &.btn-menu {
+        background: url(../../images/more_ico.svg) 50% no-repeat;
+        z-index: 5;
+    }
+    &.btn-playlist {
+        background: url(../../images/playlist_ico.svg) 0 no-repeat;
+        z-index: 2;
+    }
+    &.btn-shuffle {
+        background: url(../../images/shuffle_ico.svg) 50% no-repeat;
+        background-size: 26px;
+    }
+    &.btn-previous {
+        background: url(../../images/previous_ico.svg) 50% no-repeat;
+        background-size: 30px;
+    }
+    &.btn-play {
+        background: url(../../images/Play_inactive.png) 50% no-repeat;
+        background-size: 80px;
+        padding: 60px;
+        @include screenUp(xs) {
+            background-size: 160px;
+            padding: 130px 115px;
+        }
+        &.active {
+            background: url(../../images/Play_active.png) 35% 60% no-repeat;
+            background-size: 130px;
+            padding: 60px;
+            @include screenUp(xs) {
+                background-size: 260px;
+                padding: 130px 115px;
+            }
+        }
+    }
+    &.btn-next {
+        background: url(../../images/next_ico.svg) 50% no-repeat;
+        background-size: 30px;
+    }
+    &.btn-repeat {
+        background: url(../../images/repeat_ico.svg) 50% no-repeat;
+        background-size: 26px;
+    }
+    &.btn-close-drawer {
+        background: url(../../images/hide_ico.svg) 50% no-repeat;
+        background-size: 26px;
+    }
+}

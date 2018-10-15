@@ -1,0 +1,51 @@
+@import "elements/_mixins";
+@import "elements/_buttons";
+@import "elements/_animations";
+@import "elements/_variables";
+@import "partials/_nav";
+@import "partials/_background";
+@import "partials/_album-cover";
+@import "partials/_song-info";
+@import "partials/_song-slider";
+@import "partials/_controls";
+@import "partials/_time-bar";
+@import "partials/_equalizer";
+@import "partials/_footer";
+@import "partials/_drawer";
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    clear: both;
+}
+
+html {
+    max-width: 576px;
+    margin: 0 auto;
+}
+
+body {
+    position: relative;
+    max-width: 576px;
+    margin: 0 auto;
+    background-color: $dark-gray;
+    color: #fff;
+}
+
+.container {
+    position: relative;
+    max-width: 576px;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Utilities */
+
+.ovf-h {
+    overflow: hidden;
+}

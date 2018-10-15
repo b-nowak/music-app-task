@@ -1,0 +1,34 @@
+nav {
+    @include flex(space-between, center, row);
+    width: 100%;
+    padding: 15px;
+    @include screenUp(xs) {
+        padding: 41px 45px;
+    }
+    .title {
+        @include flex(center, center, column);
+        color: #fff;
+        padding: 0;
+        margin: 0;
+        .main-title {
+            padding: 0;
+            margin: 0;
+            color: rgb(184, 184, 184);
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 15px;
+            @include screenUp(xs) {
+                font-size: 18px;
+            }
+        }
+        .subtitle {
+            padding: 0;
+            margin: 0;
+            font-weight: 400;
+            font-size: 18px;
+            @include screenUp(xs) {
+                font-size: 24px;
+            }
+        }
+    }
+}

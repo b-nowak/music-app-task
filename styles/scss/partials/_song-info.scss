@@ -1,0 +1,28 @@
+.song-title-wrap {
+    @include flex(center, center, column);
+    .song-title {
+        color: $green;
+        font-weight: 400;
+        opacity: 1;
+        transition: all .2s ease-in-out;
+        padding: 0;
+        margin: 30px 0 4px 0;
+        user-select: none;
+        font-size: 20px;
+        @include screenUp(xs) {
+            font-size: 36px;
+        }
+    }
+    .artist {
+        color: $gray;
+        font-size: 18px;
+        text-transform: uppercase;
+        opacity: 1;
+        transition: all .3s ease-in-out;
+        transition-delay: .08s;
+        padding: 0;
+        margin: 0;
+        font-weight: 400;
+        user-select: none;
+    }
+}

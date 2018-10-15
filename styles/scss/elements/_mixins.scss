@@ -1,0 +1,16 @@
+
+@mixin flex($jc, $ai, $fd) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+}
+
+@mixin screenUp($size) {
+    $xs: "(min-width: 480px)";
+    @if $size==xs {
+        @media only screen and #{$xs} {
+            @content;
+        }
+    }
+}

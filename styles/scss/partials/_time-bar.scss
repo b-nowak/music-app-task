@@ -1,0 +1,51 @@
+.time-bar {
+    width: 100%;
+    @include flex(center, center, row);
+    .time-bar-wrap {
+        @include flex(space-between, center, row);
+        padding: 0 15px;
+        width: 88%;
+        margin: 0 0 30px 0;
+        @include screenUp(xs) {
+            margin-top: -27px;
+            margin-bottom: 100px;
+        }
+        .bar {
+            position: relative;
+            width: 100%;
+            margin: 0 20px;
+            .bar-bg {
+                position: absolute;
+                height: 1px;
+                background: #070707;
+                width: 100%;
+                z-index: -1;
+                top: 2px;
+                left: 0;
+                &:after {
+                    position: absolute;
+                    content: '';
+                    top: -2px;
+                    right: 0;
+                    height: 5px;
+                    width: 5px;
+                    background: #000;
+                    border-radius: 50%;
+                }
+            }
+            .bar-fill {
+                height: 5px;
+                background: rgb(41, 41, 41);
+                width: 50%;
+                z-index: 2;
+                border-top-right-radius: 2.5px;
+                border-bottom-right-radius: 2.5px;
+            }
+        }
+        .time {
+            font-size: 18px;
+            font-weight: 400;
+            color: $gray;
+        }
+    }
+}
